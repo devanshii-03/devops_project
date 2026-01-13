@@ -5,3 +5,4 @@ project ideas:
 
 (please add yours)
 
+Devanshi - money manager
