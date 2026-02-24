@@ -1,8 +1,9 @@
 # devops_project
 github implementation
 
-project ideas:
-
-(please add yours)
-
-Devanshi - money manager
+todo:
+auth(auth, user)
+transactions()
+budget
+reports
+util(db, constants)
