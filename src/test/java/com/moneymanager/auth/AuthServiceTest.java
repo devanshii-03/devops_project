@@ -1,10 +1,7 @@
-package src.test.java.com.moneymanager.auth;
+package com.moneymanager.auth;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import src.main.java.com.moneymanager.auth.AuthService;
-import src.main.java.com.moneymanager.auth.User;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -36,8 +33,7 @@ public class AuthServiceTest {
 
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
-                () -> authService.registerUser("devanshi", "newpass")
-        );
+                () -> authService.registerUser("devanshi", "newpass"));
 
         assertEquals("Username already exists", exception.getMessage());
     }
@@ -46,16 +42,14 @@ public class AuthServiceTest {
     void shouldThrowExceptionForBlankUsername() {
         assertThrows(
                 IllegalArgumentException.class,
-                () -> authService.registerUser("", "pass123")
-        );
+                () -> authService.registerUser("", "pass123"));
     }
 
     @Test
     void shouldThrowExceptionForShortPassword() {
         assertThrows(
                 IllegalArgumentException.class,
-                () -> authService.registerUser("user1", "123")
-        );
+                () -> authService.registerUser("user1", "123"));
     }
 
     // ----------------------------
@@ -84,8 +78,7 @@ public class AuthServiceTest {
     void shouldThrowExceptionIfUserDoesNotExist() {
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
-                () -> authService.login("unknown", "pass123")
-        );
+                () -> authService.login("unknown", "pass123"));
 
         assertEquals("User does not exist", exception.getMessage());
     }
