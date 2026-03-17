@@ -1,10 +1,7 @@
-package src.test.java.com.moneymanager.auth;
+package com.moneymanager.auth;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import src.main.java.com.moneymanager.auth.AuthService;
-import src.main.java.com.moneymanager.auth.User;
 
 import static org.junit.jupiter.api.Assertions.*;
 

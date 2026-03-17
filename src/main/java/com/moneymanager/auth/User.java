@@ -1,4 +1,4 @@
-package src.main.java.com.moneymanager.auth;
+package com.moneymanager.auth;
 
 import java.util.Objects;
 import java.util.UUID;
