@@ -1,4 +1,4 @@
-package src.main.java.com.moneymanager.report;
+package com.moneymanager.report;
 
 public class ExportReport {
 

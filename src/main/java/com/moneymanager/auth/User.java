@@ -1,4 +1,4 @@
-package src.main.java.com.moneymanager.auth;
+package com.moneymanager.auth;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -38,8 +38,10 @@ public class User {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof User)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof User))
+            return false;
         User user = (User) o;
         return username.equals(user.username);
     }
