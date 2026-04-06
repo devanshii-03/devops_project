@@ -1,0 +1,4 @@
+com\moneymanager\auth\User.class
+com\moneymanager\transact\TransactionService.class
+com\moneymanager\transact\Transaction.class
+com\moneymanager\auth\AuthService.class
