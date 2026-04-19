@@ -1,5 +1,4 @@
 package com.moneymanager.auth;
-package com.moneymanager.auth;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
